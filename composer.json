@@ -1,0 +1,12 @@
+{
+    "name": "dtome/cookie-policy",
+    "license": "GPL V3",
+    "authors": [
+        {
+            "name": "Daniel Tome",
+            "email": "danieltomefer@gmail.com"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev"
+}
