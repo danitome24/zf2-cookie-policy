@@ -37,8 +37,15 @@ and
 
 Configuration:
 -------------
+1-Enable the module on your `application.config.php`.
 
-1- In your view/layout.phtml paste this code under javascript files call (inside of head tag).
+```php
+'modules' => array(
+        'cookiepolicy',
+    ),
+```
+
+2- In your view/layout.phtml paste this code under javascript files call (inside of head tag).
 
 ```javascript
 <script>
@@ -61,13 +68,13 @@ Configuration:
 </script>
 ```
 
-2- You must copy the data files to public folder:
+3- You must copy the data files to public folder:
 
     data/cookieJs.js to public/js
     data/cookieStyle.css to public/css
 
 
-3- In your layout.phtml define the javascript file and css file like the following:
+4- In your layout.phtml define the javascript file and css file like the following:
 
 ```php
 ->prependStylesheet($this->basePath('css/cookieStyle.css'))
@@ -75,7 +82,7 @@ Configuration:
 ->prependFile($this->basePath('js/cookieJs.js'))
 ```
 
-4- On the same layout.phtml paste this code inside.
+5- On the same layout.phtml paste this code inside.
 
 ```php
 <?php echo $this->cookiePolicy(); ?>
