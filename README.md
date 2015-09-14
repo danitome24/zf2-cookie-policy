@@ -9,6 +9,10 @@ Introduction:
 
 This plugin provide us a top/bottom bar with cookie policy and a button to accept it.
 
+Image:
+------
+![promisechains](https://cloud.githubusercontent.com/assets/7501990/9856217/a91cf01c-5b13-11e5-8046-8961bf9dac9d.PNG)
+
 Instalation:
 ------------
 To install this module you must follow this steps:
@@ -82,7 +86,10 @@ Configuration:
 ->prependFile($this->basePath('js/cookieJs.js'))
 ```
 
-5- On the same layout.phtml paste this code inside.
+Usage:
+------
+
+On your `layout.phtml` you must add :
 
 ```php
 <?php echo $this->cookiePolicy(); ?>
