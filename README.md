@@ -9,6 +9,31 @@ Introduction:
 
 This plugin provide us a top/bottom bar with cookie policy and a button to accept it.
 
+Instalation:
+------------
+To install this module you must follow this steps:
+
+1- In your composer.json you must write:
+
+```php
+"require": {
+        "dtome/cookie-policy": "dev-master",
+    },
+```
+
+and
+
+```php
+"autoload": {
+      "psr-4":{
+        "cookiepolicy\\" : "vendor/dtome/cookie-policy"
+      }
+    }
+```
+
+2- Then you must run the following command line `composer update`
+
+
 
 Configuration:
 -------------
